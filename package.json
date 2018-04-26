@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "description": "R.E. React Elements component library",
   "main": "index.js",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "lerna exec npm run build",
     "bootstrap": "lerna bootstrap",
