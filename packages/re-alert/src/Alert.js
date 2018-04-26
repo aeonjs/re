@@ -28,6 +28,9 @@ const Alert = props => {
 }
 
 Alert.propTypes = {
+  /**
+   * Alert types from Ant
+   */
   type: PropTypes.oneOf(['error', 'info', 'success', 'warning'])
 }
 Alert.defaultProps = {
