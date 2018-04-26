@@ -1,4 +1,4 @@
-![RE](images/RE.png)
+![RE](images/RE-logo.png)
 
 # 👾 RE
 
