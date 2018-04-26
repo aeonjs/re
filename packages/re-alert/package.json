@@ -2,13 +2,56 @@
   "name": "@aeonjs/re-alert",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
+    "babel": "babel -d dist --ignore '*.test.js' src",
+    "build": "npm run lint && npm run clean && npm run babel && npm run css",
+    "clean": "rm -rf dist",
+    "css": "cp src/style/*.css dist/style",
+    "lint": "standard 'src/**/*.js' --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jon Quach <hello@jonquach.com> (https://jonquach.com)",
   "license": "MIT",
+  "peerDependencies": {
+    "react": "^16"
+  },
+  "dependencies": {
+    "antd": "3.4.3",
+    "classnames": "^2",
+    "prop-types": "15.6.1"
+  },
   "devDependencies": {
+    "babel-cli": "6.26.0",
+    "babel-core": "6.26.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "6.26.0",
+    "babel-preset-env": "1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-1": "6.24.1",
+    "react": "16.3.1",
+    "react-dom": "16.3.1",
     "standard": "^11.0.1"
+  },
+  "standard": {
+    "ignore": [
+      "dist"
+    ],
+    "globals": [
+      "Event",
+      "describe",
+      "context",
+      "before",
+      "beforeEach",
+      "after",
+      "afterEach",
+      "it",
+      "expect",
+      "jasmine",
+      "jest",
+      "React",
+      "react",
+      "test",
+      "mount"
+    ]
   }
 }
