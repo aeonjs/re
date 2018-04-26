@@ -4,6 +4,7 @@
   "description": "R.E. React Elements component library",
   "main": "index.js",
   "scripts": {
+    "build": "lerna exec npm run build",
     "bootstrap": "lerna bootstrap",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,16 +12,22 @@
   "license": "MIT",
   "devDependencies": {
     "@storybook/react": "3.4.2",
+    "antd": "3.4.3",
     "babel-cli": "6.26.0",
+    "babel-core": "6.26.0",
     "babel-jest": "22.4.3",
     "babel-plugin-transform-es2015-modules-commonjs": "6.26.0",
     "babel-preset-env": "1.6.1",
     "babel-preset-react": "6.24.1",
+    "babel-preset-stage-1": "6.24.1",
+    "classnames": "2.2.5",
     "enzyme": "3.3.0",
     "glob-loader": "0.3.0",
     "jest": "22.4.3",
     "lerna": "2.10.2",
+    "prop-types": "15.6.1",
     "react": "16.3.2",
-    "react-dom": "16.3.2"
+    "react-dom": "16.3.2",
+    "standard": "^11.0.1"
   }
 }
