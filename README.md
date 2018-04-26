@@ -1,3 +1,5 @@
-# 👾 Ant
+![RE](images/RE.png)
 
-> Extension of Ant Design's Component Library
+# 👾 RE
+
+> React Elements component library
